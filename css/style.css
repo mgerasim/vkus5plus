@@ -88,10 +88,19 @@ footer {
 	text-align:center;
 }
 
-.itemsub {
-	width:100%;
+.itemsubwrap {
+	margin:0 auto;
+	width:90%;
+	border:1px solid #aaa;
 }
+
+.itemsub {
+	width:30%;
+	margin:0 auto;
+	float: left;
+}
+
 .itemsub img{
-		width:100%;
+	width:100%;
 	margin:0 auto;
 }
