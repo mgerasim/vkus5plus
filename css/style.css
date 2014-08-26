@@ -82,6 +82,28 @@ footer {
 	padding-bottom:1em;
 }
 
+
+.button{
+	width:90%;
+	display: inline-block;	
+	padding: 0.7em 0.3em;
+	margin-bottom:1em;
+	/*
+	font-size: 1.5em;*/
+	text-decoration: none;
+	border: 2px solid #c4c4c4; 
+	border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	line-height: 1;
+}
+
+.button:hover{
+/*	background: #333;*/
+background-color: #b25e51;
+}
+
+
 .itemheader {	
 	width: 100%
 	margin: 0 auto;
@@ -107,7 +129,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-	
+		
 }
 
 @media screen and (max-width: 520px) {	
@@ -120,6 +142,16 @@ footer {
 		width:0;
 		height:0;
 		}
+	#catalog {
+		width: 100%;
+		position:relative;
+		top:auto;
+	}
+	
+	#content {
+		float:left;
+		width: 100%;
+	}
 	
 }
 
@@ -132,7 +164,7 @@ footer {
 	visibility:hidden;
 	width:0;
 	height:0;
-	}
+	}	
 }
 
 @media screen and (max-width: 360px) {
