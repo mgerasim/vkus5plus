@@ -121,11 +121,22 @@ background-color: #b25e51;
 	width:30%;
 	margin:0 auto;
 	float: left;
+	border: 2px solid #ffffff;
+	height:100%;		
 }
 
 .itemsub img{
 	width:100%;
 	margin:0 auto;
+}
+
+.itemsub:hover {
+	border: 2px solid #c4c4c4; 
+	border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	line-height: 1;
+
 }
 
 @media screen and (max-width: 768px) {
