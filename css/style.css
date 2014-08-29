@@ -123,6 +123,14 @@ background-color: #b25e51;
 	float: left;
 	border: 2px solid #ffffff;
 	height:100%;		
+	
+	padding-top:0.5em;
+	
+}
+.itemsub_caption {
+	font-size:1em;
+	margin: 0 auto;
+	text-align:center;
 }
 
 .itemsub_price {
@@ -144,12 +152,18 @@ background-color: #b25e51;
 }
 
 .itemsub:hover {
+	
 	border: 2px solid #c4c4c4; 
 	border-radius: 5px; 
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	line-height: 1;
 	cursor:pointer;
+}
+
+
+.itemsub img:hover{
+	
 }
 
 @media screen and (max-width: 768px) {
@@ -176,7 +190,10 @@ background-color: #b25e51;
 		float:left;
 		width: 100%;
 	}
-	
+		
+	.itemsub {
+		width:45%;
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -189,6 +206,9 @@ background-color: #b25e51;
 	width:0;
 	height:0;
 	}	
+	.itemsub {
+		width:100%;
+	}
 }
 
 @media screen and (max-width: 360px) {
