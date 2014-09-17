@@ -4,10 +4,29 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+    <script src="js/lodash.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/vkus5plus.js"></script>
+
 </head>
 <body>
+	<!-- TEMPLATE    -->
+    <script type="text/template" id="itemsub-template">
+		<div id="<%=id%>" class="itemsub">
+			<img src="images/itemsub-mark.png" class="itemsub_mark"/>   
+			<img src="images/itemsub-plus.png" class="itemsub_plus">                            
+			<img src="images/itemsub-minus.png" class="itemsub_minus">                            
+			<img src="<%=filepath%>" alt="<%=desc%>" />
+			
+			<div class="itemsub_caption"><%=desc%></div>
+			<div class="itemsub_description_wrap">
+				<div class="itemsub_price">
+					<%=price%> руб/кг
+				</div>
+			</div>
+		</div><!-- div#iitemsub-template -->
+	</script>
+    
 	<div id="site">
     	<div id="page">
         	<header>
@@ -34,6 +53,22 @@
                         	Злаки для проращивания
                         </div><!-- div#itemheader_zlaki -->
                         <div id="itemsubwrap_zlaki" class="itemsubwrap">
+
+                        <script>
+	
+  var tmpl = document.getElementById('itemsub-template').innerHTML;
+
+  var data = { id: "itemsub_grechka1", filepath: "catalog/zlaki/grechka/grechka-itemsub.JPG", desc: "Гречка зелённая для проращивания", price: 125 };
+
+  
+  var result = _.template(tmpl, data);
+  
+    					console.log(result(data));
+  $('#itemsubwrap_zlaki').prepend( result(data) );
+
+</script>
+
+
                             <div id="itemsub_grechka" class="itemsub">
                             	<img src="images/itemsub-mark.png" class="itemsub_mark"/>   
                             	<img src="images/itemsub-plus.png" class="itemsub_plus">                            
