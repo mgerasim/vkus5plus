@@ -9,7 +9,7 @@
  
 // The commands
 $commands = array(
-'mysql -u u0033011_default -pzaq12wsx u0033011_default < u0033011_default.out'
+'mysql -u cleverbit_mysql -pnnoilqrl cleverbit_db < cleverbit_db.out'
 );
  
 // Run the commands for output
