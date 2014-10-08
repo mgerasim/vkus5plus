@@ -9,7 +9,7 @@
  
 // The commands
 $commands = array(
-'mysqldump -u u0033011_default -pzaq12wsx u0033011_default > u0033011_default.out',
+'mysqldump -u cleverbit_mysql -pnnoilqrl cleverbit_db > cleverbit_db.out',
 'git config --global user.name "Mikhail Gerasimov"',
 'git config --global user.email mgerasim@inbox.ru',
 'git add .',
