@@ -12,7 +12,7 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $dbtype = 'mysqli';
-	public $host = 'localhost';
+	public $host = 'cleverbit.mysql';
 	public $user = 'cleverbit_mysql';
 	public $password = 'nnoilqrl';
 	public $db = 'cleverbit_db';
