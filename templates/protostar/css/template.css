@@ -7427,3 +7427,7 @@ code {
 	font-weight: bold;
 	padding: 1px 4px;
 }
+
+body {
+	background-image: url('/images/morkovka.jpg'); 
+}
